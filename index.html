@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Work Satisfaction Survey Form</h1>
+    <p id="description">
+        Thank you for taking time to fill in this form.</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="control" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="control" required>
+        </div>
+        <div>
+            <label for="email" id="number-label">Age</label>
+            <input type="number" id="number" class="control" name="age" min="18" max="70" placeholder="Enter your age">
+        </div>
+        <div>
+            <label>Gender</label>
+            <select id="dropdown" class="control" required>
+                <option disabled selected value>Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>How satisfied are you with your work?(0-100 scale)</p>
+            <input type="number" class="control" name="satisfaction" min="0" max="100" placeholder="">
+        </div>
+        <div>
+            <p>What do you like about the job?(Check all that apply)</p>
+            <label class="reason"><input type="checkbox" name="pay" value="High pay" />High pay</label>
+
+            <label class="reason"><input type="checkbox" name="people" value="Nice people" />Supportive co-workers and
+                nice managers</label>
+
+            <label class="reason"><input type="checkbox" name="work" value="balance" />Good work-life balance</label>
+
+            <label class="reason"><input type="checkbox" name="Future" value="opprtunities" />Growth
+                opportunities</label>
+        </div>
+        <div>
+            <p>Would you recommend this job to others?</p>
+            <label class="radio"><input type="radio" name="recommendation" value="yes" />Yes</label>
+
+            <label class="radio"><input type="radio" name="recommendation" value="no" />No</label>
+        </div>
+        <div>
+            <p for="comment">Any comments?</p>
+            <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
